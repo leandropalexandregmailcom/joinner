@@ -21,7 +21,8 @@ O banco de dados para este projeto deve ser criado utilizando o arquivo *base.sq
 Abaixo, as especificações de funcionamento do cadastro:
 
  - A visualização do cadastro deve ser iniciada com uma Grid exibindo os registros já cadastrados, com a possibilidade de Criar um novo registro, Editar ou Excluir um registro já existente;
- - As ações de Criar e Editar devem direcionar o usuário para o formulário, para que o usuário possa efetuar as ações desejadas;
+ - As ações de Criar e Editar devem acontecer em um formulário aberto em uma Modal por cima da Grid, para que o usuário possa efetuar as alterações desejadas;
+ - A ação de exclusão deve ter uma confirmação;
  - Não é necessário criar o cadastro de País, apenas de Pessoa.
  
 Especificações da parte técnica:
@@ -29,14 +30,13 @@ Especificações da parte técnica:
  - O campo `id` da tabela de Pessoa deve ser preenchido com um valor baseado na sequence `seq_pessoa`;
  - A tabela de Pessoa tem ligação com a tabela País através do campo `pais_id`, o usuário deve selecionar o país desejado no formulário;
  - A data de nascimento não pode ser maior que a data corrente no ato do cadastro;
- - O campo `genero` deve ser preenchido com "M - Masculino", "F - Feminino" ou "Não informado". Onde a última opção pode ser salva como NULL no banco.
+ - O campo `genero` deve ser preenchido com "Masculino", "Feminino" ou "Não informado". Onde a última opção pode ser salva como NULL no banco.
 
-Itens desejáveis:
+Bibliotecas:
 
+ - Usar Bootstrap 4 para formatar o layout. Não precisa ser um layout completo, apenas o básico do formulário e da grid;
  - Gostaríamos que fossem usados componentes da biblioteca Kendo UI for jQuery, como por exemplo [KendoGrid](https://demos.telerik.com/kendo-ui/grid/index) para a grid, o [KendoDropDownList](https://demos.telerik.com/kendo-ui/dropdownlist/index) para a lista de países ou o [KendoDatePicker](https://demos.telerik.com/kendo-ui/datepicker/index) para a data de nascimento. Você pode ver como utilizar a biblioteca [neste link](https://docs.telerik.com/kendo-ui/intro/first-steps). 
 
     Dica: Existe um *sandbox* para a biblioteca [neste link](https://dojo.telerik.com/), nele é possível ver como são incluídos os arquivos JS e CSS da biblioteca no código por meio de um CDN. Por comodidade, recomendamos utilizar da mesma forma no projeto.
-	
- - Gostaríamos também que fosse usado o Bootstrap 4 para formatar o layout. Não precisa ser um layout completo, apenas o básico do formulário e da grid.
  
  **Boa sorte e obrigado por participar!**
