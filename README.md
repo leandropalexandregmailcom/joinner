@@ -6,6 +6,8 @@ Obrigado por participar do nosso processo seletivo. Este teste serve para conhec
 
 Não vamos exigir muito esforço, é um teste simples, mas capricho é bem vindo.
 
+Por favor, não poupe esforços para nos mostrar o seu conhecimento. 
+
 ### Descrição do Teste ###
 
 Estamos disponibilizando neste repositório um projeto base para o teste. É um projeto em Laravel 7.25(versão mais nova). Para que ele rode, será necessário ter intalado o [Composer](https://getcomposer.org/) e executar o comando `composer install` no diretório do teste.
